@@ -1,0 +1,9 @@
+Resposta quando consideramos x tem o endereço inicial igual a 4092:
+Para char quando ocupa 1 byte:
+x+1 = 4093; x+2 = 4094; x+3 = 4095
+Para int quando ocupa 2 bytes:
+x+1 = 4094; x+2 = 4096; x+3 = 4098
+Para float quando ocupa 4 bytes:
+x+1 = 4096; x+2 = 4100; x+3 = 4104
+Para double quando ocupa 8 bytes: 
+x+1 = 4100; x+2 = 4108; x+3 = 4116

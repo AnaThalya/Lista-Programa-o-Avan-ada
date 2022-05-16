@@ -1,0 +1,6 @@
+Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas?
+
+p = mat + 1; // Expressão válida. Pois o ponteiro p receberá o endereço da 2° posição do vetor mat[];
+p = mat++; // Expressão invalida. Pois o incremento soma 1 a unidade, não será possivel pois a sitaxe não condiz com o vetor.
+p = ++mat; // Expressão invalida. Pode-se utilizar a mesma justificativa da expressão anterior, o incremento antes não faz diferença.
+x = (*mat)++; // Expressão válida. Pois x irá receber o conteúdo armazenado no endereço da primeira posição do vetor mat[].

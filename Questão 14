@@ -1,0 +1,55 @@
+
+//Resposta:
+#include <stdio.h>
+#include <stdlib.h>
+
+//Marcadores para a função:
+int compare(const void *a, const void *b){
+  if ( *(float*)a <  *(float*)b ) return -1;
+  if ( *(float*)a == *(float*)b ) return 0;
+  if ( *(float*)a >  *(float*)b ) return 1;
+}
+//Função Princpal:
+int main(void) {
+ int v; // quantidade de valores
+ float *p;
+ float auxiliar;
+
+ printf("Digite a quantidade de valores:");
+ scanf("%d", &v);
+
+ p = malloc(v*sizeof(float));
+
+for (int i = 0; i<v; i++){
+   printf("digite o %dº valor: \n", i+1);
+   scanf("%f",&p[i]);
+}
+
+for (int a =0; a<v; a++){
+  for(int b=0; b<v; b++){
+    if(a==0){
+      if(p[a] > p[b]){
+        auxiliar = p[b];
+        p[b]= p[a];
+        p[a]=auxiliar;
+      }
+    }
+    else {
+      if((p[a] < p[b]) && (p[a] < p[a-1]) ){
+        auxiliar = p[b];
+        p[b]= p[a];
+        p[a]=auxiliar;
+      }
+    }
+    }
+  }
+
+printf("Valores digitados em ordem crescente: \n");
+for (int d = 0; d<v; d++){
+   printf("%f \n", p[d]);
+}
+
+free(p);
+
+return 0;
+} 

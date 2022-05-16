@@ -1,0 +1,4 @@
+As seguintes expressões são ilegais, para i e j variáveis inteiras e p e q ponteiros para int:
+p = i;
+i = (*&)j;
+q = *p;

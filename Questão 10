@@ -1,0 +1,42 @@
+//Resposta: As respostas referentes aos dados das bytes dos tipos de variáveis, da questão anterior são baseados por esse código: 
+
+#include <stdio.h>
+
+
+int main(void) {
+  char *a[4];
+  char *a1;
+  int *b[4];
+  int *b1;
+  float *c[4];
+  float *c1;
+  double *d[4];
+  double *d1;
+
+  a1 = &a;
+  b1 = &b;
+  c1 = &c;
+  d1 = &d;
+
+  printf("variável char:\n");
+  printf("endereço= %X \n",a1+1);
+  printf("endereço= %X \n",a1+2);
+  printf("endereço= %X \n",a1+3);
+
+  printf("variável int:\n");
+  printf("endereço= %X \n",b1+1);
+  printf("endereço= %X \n",b1+2);
+  printf("endereço= %X \n",b1+3);
+
+  printf("variável float:\n");
+  printf("endereço= %X \n",c1+1);
+  printf("endereço= %X \n",c1+2);
+  printf("endereço= %X \n",c1+3);
+
+  printf("variável double:\n");
+  printf("endereço= %X \n",d1+1);
+  printf("endereço= %X \n",d1+2);
+  printf("endereço= %X \n",d1+3);
+
+  return 0;
+  }

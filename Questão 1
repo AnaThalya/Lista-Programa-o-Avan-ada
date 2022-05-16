@@ -1,0 +1,5 @@
+Resposta:
+*p==&i; igual a 1
+*p - *q; igual a -2
+**&p; igual a 3
+Logo *3 - *p/(*q) + 7 é igual a 3 - 0 + 7 = 10
